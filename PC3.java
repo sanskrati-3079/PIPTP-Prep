@@ -1,16 +1,15 @@
 public class PC3{
     public static void main(String[] args) {
-        int n=2;
-        switch(n){
-            case 1:
-                System.out.println("One");
-            case 2:
-                n=n+1;
-                System.out.println("Two");
-            case 3:
-                System.out.println("Three");
-            default:
-                System.out.println("Other");
+        System.out.println(f(6));
+    }
+    public static int f(int n) {
+        if (n == 0) {
+            return 0;
+        } else {
+            return n + f(n - 2);
         }
     }
 }
+
+
+// Output: 12

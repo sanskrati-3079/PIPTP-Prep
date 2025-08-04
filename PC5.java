@@ -1,14 +1,14 @@
-
-public class PC5{
+public class PC5 {
     public static void main(String[] args) {
-        int score=85;
-        if (score >= 90) {
-            System.out.println("A");
+        System.out.println(fact(4));
+    }
+
+    public static int fact(int n) {
+        if (n == 0) {
+            return 1;
         }
-        else if (score>=80){
-            System.out.println("B");
-        }
-        else
-        System.out.println("C");
+        return n * fact(n - 1);
     }
 }
+
+// Output: 24
