@@ -1,9 +1,13 @@
-public class PC12{
+public class PC12 {
     public static void main(String[] args) {
-        int x,y,result;
-        x=11;
-        y=4;
-        result=(x-y+121)%x;
-        System.out.println(result);
+        System.out.println(series(5));
+    }
+
+    public static int series(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        return n * series(n - 1);
     }
 }
+

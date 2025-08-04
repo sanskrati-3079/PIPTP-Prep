@@ -1,12 +1,12 @@
-
 public class PC2{
-
     public static void main(String[] args) {
-        int x=5;
-        if (x>0 && x%2==1){
-            System.out.println("Positive Odd");
+        System.out.println(mystery(3, 4));
+    }
+    public static int mystery(int a, int b) {
+        if (b == 0) {
+            return 0;
         }
-        else
-        System.out.println("Other");
+        return a + mystery(a, b - 1);
     }
 }
+

@@ -1,11 +1,13 @@
-public class PC9{
+public class PC9 {
     public static void main(String[] args) {
-        int value=2;
-        int sum=0;
-        while (value<=10){
-            sum=sum+value;
-            value=value+2;
+        System.out.println(sumDigits(1234));
+    }
+
+    public static int sumDigits(int n) {
+        if (n == 0) {
+            return 0;
         }
-        System.out.println(sum);
+        return (n % 10) + sumDigits(n / 10);
     }
 }
+

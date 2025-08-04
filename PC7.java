@@ -1,11 +1,13 @@
 public class PC7{
-    public static void main(String[] args){
-        int sum=0;
-        for(int i=1;i<=3;i++){
-            for(int j=1;j<=i;j++){
-                sum = sum + j;
-            }
+    public static void main(String[] args) {
+        int n = 5; 
+        System.out.println(fun(n));
+    }
+
+    public static int fun(int n) {
+        if (n <= 1) {
+            return n;
         }
-        System.out.println(sum);
+        return fun(n - 1) + fun(n - 3);
     }
 }

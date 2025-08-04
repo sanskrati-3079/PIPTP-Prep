@@ -1,8 +1,13 @@
-public class PC14{
+public class PC14 {
     public static void main(String[] args) {
-        int a=2;
-        int b=5;
-        int c=(a+b)*(b-a);
-        System.out.println(c);
+        System.out.println(productOfDigits(123)); // Output: 6
+    }
+
+    public static int productOfDigits(int n) {
+        if (n == 0) {
+            return 1; // Base case: product of digits of 0 is defined as 1
+        }
+        return (n % 10) * productOfDigits(n / 10); // Recursive case
     }
 }
+

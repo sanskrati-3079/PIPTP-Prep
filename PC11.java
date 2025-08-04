@@ -1,8 +1,15 @@
-public class PC11{
+public class PC11 {
     public static void main(String[] args) {
-        int x=5;
-        int y=3;
-        int z=x+y*x-2;
-        System.out.println(z);
+        System.out.println(foo(4));
+    }
+
+    public static int foo(int n) {
+        if (n <= 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        }
+        return foo(n - 1) + foo(n - 2);
     }
 }
+

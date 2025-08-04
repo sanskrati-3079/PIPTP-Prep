@@ -1,11 +1,14 @@
-public class PC17{
+public class PC17 {
     public static void main(String[] args) {
-        int x = 7;
-        int y = 2;
-        if (x > y && y < 3) {
-            System.out.println("Inside");
-        } else {
-            System.out.println("Outside");
+        countDown(3);
+    }
+
+    public static void countDown(int n) {
+        if (n == 0) {
+            return;
         }
+        System.out.println(n);
+        countDown(n - 1);
     }
 }
+

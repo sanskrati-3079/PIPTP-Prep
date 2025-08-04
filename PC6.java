@@ -1,9 +1,15 @@
-public class PC6{
+public class PC6 {
     public static void main(String[] args) {
-        int sum=0;
-        for(int i=1;i<=5;i++){
-            sum=sum+i;
+        System.out.println(fib(6));
+    }
+
+    public static int fib(int n) {
+        if (n == 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
         }
-        System.out.println(sum);
+        return fib(n - 1) + fib(n - 2);
     }
 }
+
