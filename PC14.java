@@ -1,8 +1,17 @@
 public class PC14{
+    public static int funA(int n) {
+        if (n <= 0) return 0;
+        return n + funB(n - 1);
+    }
+    public static int funB(int n) {
+        if (n <= 0) return 0;
+        return n + funA(n / 2);
+    }
     public static void main(String[] args) {
-        int a=2;
-        int b=5;
-        int c=(a+b)*(b-a);
-        System.out.println(c);
+        System.out.println(funA(4));
     }
 }
+
+
+
+// Output: 8

@@ -1,14 +1,15 @@
 public class PC5 {
-    public static void main(String[] args) {
-        System.out.println(fact(4));
+    public static int mul(int a, int b) {
+        return a * b;
     }
 
-    public static int fact(int n) {
-        if (n == 0) {
-            return 1;
-        }
-        return n * fact(n - 1);
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int result = mul(add(1, 2), add(2, 3));
+        System.out.println(result);
     }
 }
-
-// Output: 24
+    

@@ -1,10 +1,12 @@
-public class PC8{
+public class PC8 {
+    public static int process(int x) {
+        return x * 2;
+    }
+
     public static void main(String[] args) {
-        for(int i=1;i<=5;i++){
-            if(i==3){
-                continue;
-            }
-            System.out.println(i);
-        }
+        int x = 3;
+        int y = process(process(x));
+        System.out.println(y);
     }
 }
+// Output: 12

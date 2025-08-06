@@ -1,17 +1,11 @@
 public class PC1{
-    public static void main(String[] args){
-        int n=5;
-        System.out.println(sum(n));
-    }
-    public static int sum(int n) {
-        if (n == 1) {
-            return 1;
-        }
-        return n + sum(n - 1);  
+    public static int add(int a, int b) {
+    return a + b;
+    }      
+    public static void main(String[] args) {
+    int x = add(add(2, 3), 4);
+    System.out.println(x);
     }
 }
 
-
-// Output : 15
-
-
+// Output: 9

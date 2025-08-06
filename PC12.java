@@ -1,9 +1,13 @@
 public class PC12{
+    public static int f(int a){
+        return a+1;
+    }
+    public static int g(int a){
+        return f(a)*2;
+    }
     public static void main(String[] args) {
-        int x,y,result;
-        x=11;
-        y=4;
-        result=(x-y+121)%x;
-        System.out.println(result);
+        System.out.println(g(3));
     }
 }
+
+// Output: 8

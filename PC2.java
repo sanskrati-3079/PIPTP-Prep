@@ -1,14 +1,10 @@
-public class PC2{
-    public static void main(String[] args) {
-        System.out.println(mystery(3, 4));
+public class PC2 {
+    public static int square(int x) {
+        return x * x;
     }
-    public static int mystery(int a, int b) {
-        if (b == 0) {
-            return 0;
-        }
-        return a + mystery(a, b - 1);
+    public static void main(String[] args) {
+        int res = square(square(2));
+        System.out.println(res);
     }
 }
-
-// Output: 12
-
+// Output: 16

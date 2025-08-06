@@ -1,21 +1,11 @@
 public class PC4{
-    public static void main(String[] args) {
-        int x = 3;
-        fun(x);
+    public static int f(int x) {
+        return x + 1;
     }
-
-    public static void fun(int x) {
-        if (x == 0) {
-            return;
-        }
-        fun(x - 1);
-        System.out.println(x);
+    
+    public static void main(String[] args) {
+        int a = f(f(f(1)));
+        System.out.println(a);
     }
 }
-
-
-// Output:
-// 1
-// 2
-// 3
-
+// Output: 4

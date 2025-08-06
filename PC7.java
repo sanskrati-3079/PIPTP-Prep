@@ -1,11 +1,12 @@
-public class PC7{
-    public static void main(String[] args){
-        int sum=0;
-        for(int i=1;i<=3;i++){
-            for(int j=1;j<=i;j++){
-                sum = sum + j;
-            }
-        }
-        System.out.println(sum);
+public class PC7 {
+    public static int mystery(int x) {
+        if (x == 0) return 1;
+        return 2 * mystery(x - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mystery(4));
     }
 }
+// Output: 16
+

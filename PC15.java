@@ -1,8 +1,10 @@
 public class PC15{
-    public static void main(String[] args){
-        int x = 8;
-        int y = 3;
-        int z=x % y * 2;
-        System.out.println(z);
+    public static boolean isEven(int x) {
+        return x % 2 == 0;
+    }
+    public static void main(String[] args) {
+        System.out.println(isEven(6));
     }
 }
+
+// Output: trues
